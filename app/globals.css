@@ -1,0 +1,236 @@
+:root {
+    --primary-color: #388E3C; /* A solid, calming green */
+    --secondary-color: #81C784; /* A lighter, friendly green for accents */
+    --dark-color: #212121;      /* Dark grey for text headings */
+    --light-color: #F8F9FA;     /* A very light grey, almost white */
+    --text-color: #424242;      /* Slightly lighter grey for body text */
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #fff; /* White background */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* --- Animations --- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* New Keyframes for Gradient Animation */
+@keyframes moveGradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* New Keyframes for Interactive Button */
+@keyframes buttonBreathe {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 8px 25px rgba(46, 125, 50, 0.3);
+    }
+}
+
+/* CTA Button Styling */
+.cta-button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.7rem 1.8rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #2E7D32; /* Slightly darker green */
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Hero Section with Animated Gradient */
+.hero-section {
+    height: 90vh;
+    /* Replaced static image with an animated gradient */
+    background: linear-gradient(-45deg, #ffffff, #e8f5e9, #c8e6c9, #81c784);
+    background-size: 400% 400%;
+    animation: moveGradient 15s ease infinite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--dark-color); /* Changed text color for readability */
+    padding: 0 1rem;
+}
+
+/* Animated Hero Content */
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+    /* Added a darker green color for better contrast on the new background */
+    color: var(--primary-color);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    animation: fadeInUp 0.8s ease-out 0.3s forwards;
+    opacity: 0;
+}
+
+.hero-content .cta-button {
+    animation: fadeInUp 0.8s ease-out 0.6s forwards, buttonBreathe 3s ease-in-out infinite 1.5s;
+    opacity: 0;
+}
+
+
+/* Content Sections */
+.content-section {
+    padding: 4rem 0;
+}
+.content-section-colored {
+    padding: 4rem 0;
+    background-color: var(--light-color);
+}
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+}
+.section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+/* Services Section */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.service-card {
+    background: #fff;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: var(--font-family);
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid var(--primary-color);
+    border-color: var(--primary-color);
+}
+.contact-form button {
+    align-self: center;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-color);
+    color: #fff;
+    padding-top: 3rem;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+.footer h3, .footer h4 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+.footer-links ul {
+    list-style: none;
+}
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.footer-links a:hover {
+    color: #fff;
+}
+.footer-bottom {
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    border-top: 1px solid #555;
+}
+
+/* Responsive Design */
+@media(max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
