@@ -1,8 +1,8 @@
 # Student Mind Care
 
-![Status](https://img.shields.io/badge/Status-Active-success?style=flat-square)
-![Platform](https://img.shields.io/badge/Platform-Web-success?style=flat-square)
-![License](https://img.shields.io/badge/License-MIT-success?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Active-success?style=flat-square&color=2ea44f)
+![Version](https://img.shields.io/badge/Version-1.0.0-success?style=flat-square&color=2ea44f)
+![Platform](https://img.shields.io/badge/Platform-Web-success?style=flat-square&color=2ea44f)
 
 ## Project Overview
 
@@ -19,27 +19,32 @@ The application leverages location-based logic to connect students with counselo
 ### 1. Hybrid Appointment System
 * **Location-Based Matching:** Automatically filters and suggests counselors available within the student's specific campus or region.
 * **Dual Mode Scheduling:**
-    * **In-School:** Facilitates booking of physical slots with faculty counselors during school hours.
-    * **Remote Sessions:** integrated video conferencing support for private, after-hours counseling.
+    * **In-School:** Facilitates booking of physical slots with faculty counselors.
+    * **Online Sessions:** Integrated scheduling for private, virtual counseling.
 
 ### 2. Wellness & Therapeutics Module
 A dedicated repository of digital mental health tools designed to lower anxiety levels:
 * **Audio Therapy:** Curated binaural beats and calming instrumental playlists.
 * **Visual Aid:** Guided meditation sessions and stress-relief visualizations.
 
+### 3. Demonstration Mode (Sandbox)
+* **Email Simulation:** The platform operates in a demo environment. All appointment confirmations and notifications are routed to a secure sandbox email for testing purposes.
+* **Local Data Management:** User data and appointment slots are currently managed via local storage for demonstration speed and privacy.
+
 ---
 
 ## Technical Architecture
 
-![HTML5](https://img.shields.io/badge/Frontend-HTML5-green?style=flat-square)
-![CSS3](https://img.shields.io/badge/Style-CSS3-green?style=flat-square)
-![JavaScript](https://img.shields.io/badge/Logic-JavaScript-green?style=flat-square)
+![Next.js](https://img.shields.io/badge/Framework-Next.js-black?style=flat-square&logo=next.js)
+![Tailwind CSS](https://img.shields.io/badge/Style-Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css)
+![JavaScript](https://img.shields.io/badge/Language-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
-The application is built with a focus on accessibility and performance.
+The application is built using a modern, component-based architecture:
 
-* **Frontend:** HTML5, CSS3, JavaScript (ES6+)
-* **Backend:** [Insert your Backend here, e.g., Python Django / Node.js]
-* **Database:** [Insert your Database here, e.g., MySQL / MongoDB]
+* **Frontend Framework:** Next.js (React)
+* **Styling:** Tailwind CSS (Utility-first framework)
+* **State Management:** Local State / Context API
+* **Data Handling:** Local JSON / Mock Data Architecture
 
 ---
 
@@ -55,7 +60,7 @@ git clone [https://github.com/your-username/student-mind-care.git](https://githu
 cd student-mind-care
 
 # 3. Install dependencies
-[Insert command, e.g., npm install or pip install -r requirements.txt]
+npm install
 
-# 4. Start the server
-[Insert command, e.g., npm start or python manage.py runserver]
+# 4. Start the development server
+npm run dev
