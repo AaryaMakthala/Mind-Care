@@ -1,8 +1,19 @@
 # Student Mind Care
 
-![Status](https://img.shields.io/badge/Status-Active-success?style=flat-square&color=2ea44f)
-![Deployment](https://img.shields.io/badge/Deployment-Netlify-success?style=flat-square&color=00AD9F)
-![Platform](https://img.shields.io/badge/Platform-Web-success?style=flat-square&color=2ea44f)
+<div align="center">
+  <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/tailwindcss-0F172A?style=for-the-badge&logo=tailwindcss&logoColor=38B2AC" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="Netlify" />
+</div>
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Status-Active-success?style=flat-square&color=2ea44f" alt="Status" />
+  <img src="https://img.shields.io/badge/Platform-Web-success?style=flat-square&color=2ea44f" alt="Platform" />
+  <img src="https://img.shields.io/badge/License-MIT-success?style=flat-square&color=2ea44f" alt="License" />
+</div>
+
+<br />
 
 ## Project Abstract
 
@@ -34,14 +45,9 @@ As a portfolio project, the application allows for full feature testing without 
 
 ---
 
-## Technical Stack
+## Technical Overview
 
-The application is built on a modern, component-based architecture optimized for performance.
-
-![Next.js](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/tailwindcss-0F172A?style=for-the-badge&logo=tailwindcss&logoColor=38B2AC)
-![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Netlify](https://img.shields.io/badge/netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+The application is built on a modern, component-based architecture optimized for performance and accessibility.
 
 * **Frontend Framework:** Next.js (React) for server-side rendering and SEO optimization.
 * **Styling Engine:** Tailwind CSS for a professional, distraction-free "Green & White" aesthetic.
@@ -78,11 +84,4 @@ The application will be available at `http://localhost:3000`.
 For inquiries regarding the architecture or development of this project, please reach out via GitHub.
 
 ---
-© 2026 Student Mind Care. All Rights Reserved.
-
-## Contact
-
-For any inquiries regarding the code architecture or potential collaboration, please reach out via GitHub.
-
------
 © 2026 Student Mind Care. All Rights Reserved.
